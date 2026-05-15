@@ -103,36 +103,37 @@ function About() {
       </div>
 
       {/* PROJECT IMAGE SLIDER */}
-      <div className="slider-section">
+
+<div className="slider-section">
 
   <Swiper
-  slidesPerView={3}
-  centeredSlides={true}
-  grabCursor={true}
-  loop={true}
-  speed={1200}
-  spaceBetween={-80}
+    slidesPerView={"auto"}
+    centeredSlides={true}
+    watchSlidesProgress={true}
+    grabCursor={true}
+    loop={true}
+    speed={1200}
+    spaceBetween={-220}
 
-  autoplay={{
-    delay: 1500,
-    disableOnInteraction: false,
-  }}
+    autoplay={{
+      delay: 1500,
+      disableOnInteraction: false,
+    }}
 
-  breakpoints={{
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 0,
-    },
+    breakpoints={{
 
-    700: {
-      slidesPerView: 3,
-      spaceBetween: -80,
-    },
-  }}
+      0: {
+        spaceBetween: -40,
+      },
 
-  modules={[Autoplay]}
-  className="mySwiper"
->
+      700: {
+        spaceBetween: -220,
+      },
+    }}
+
+    modules={[Autoplay]}
+    className="mySwiper"
+  >
 
     {[
       "/navdhara (1).jpeg",
