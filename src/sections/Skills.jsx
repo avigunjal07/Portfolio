@@ -55,7 +55,7 @@ function Skills() {
         viewport={{ once: true }}
       >
         <h2>
-          My <span>Skills</span>
+          <span>Skills & Technologies</span>
         </h2>
       </motion.div>
 
