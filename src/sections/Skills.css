@@ -1,0 +1,285 @@
+/* Skills.css */
+
+.skills-section{
+  min-height:100vh;
+  width:100%;
+  background:#020617;
+  padding:100px 0;
+  overflow:hidden;
+  margin-top: -100px;
+}
+
+.skills-heading{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+.skills-heading h2{
+  font-size:3rem;
+  color:#fff;
+  font-weight:700;
+}
+
+.skills-heading span{
+  color:#38bdf8;
+}
+
+/* CONTAINER */
+
+.skills-container{
+  width:90%;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+  gap:35px;
+}
+
+/* BASE CARD */
+
+.skills-card{
+  position:relative;
+
+  border-radius:24px;
+
+  padding:35px 25px;
+
+  overflow:hidden;
+
+  backdrop-filter:blur(12px);
+
+  transition:0.4s ease;
+}
+
+.skills-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  opacity:0.08;
+}
+
+.skills-card h3,
+.skills-grid{
+  position:relative;
+  z-index:2;
+}
+
+.skills-card h3{
+  color:#fff;
+  font-size:1.4rem;
+  margin-bottom:35px;
+  text-align:center;
+}
+
+/* ========================= */
+/* WEB DEVELOPMENT */
+/* ========================= */
+
+.web-card{
+  background:rgba(15,23,42,0.88);
+
+  border:1px solid rgba(56,189,248,0.18);
+
+  box-shadow:
+    0 0 20px rgba(56,189,248,0.08);
+}
+
+.web-card::before{
+  background:linear-gradient(
+    135deg,
+    #38bdf8,
+    transparent
+  );
+}
+
+.web-card:hover{
+  transform:translateY(-10px);
+
+  border-color:#38bdf8;
+
+  box-shadow:
+    0 0 35px rgba(56,189,248,0.3);
+}
+
+/* ========================= */
+/* TECHNICAL */
+/* ========================= */
+
+.tech-card{
+  background:rgba(15,23,42,0.88);
+
+  border:1px solid rgba(74,222,128,0.18);
+
+  box-shadow:
+    0 0 20px rgba(74,222,128,0.08);
+}
+
+.tech-card::before{
+  background:linear-gradient(
+    135deg,
+    #4ade80,
+    transparent
+  );
+}
+
+.tech-card:hover{
+  transform:translateY(-10px);
+
+  border-color:#4ade80;
+
+  box-shadow:
+    0 0 35px rgba(74,222,128,0.3);
+}
+
+/* ========================= */
+/* TOOLS */
+/* ========================= */
+
+.tools-card{
+  background:rgba(15,23,42,0.88);
+
+  border:1px solid rgba(232,121,249,0.18);
+
+  box-shadow:
+    0 0 20px rgba(232,121,249,0.08);
+}
+
+.tools-card::before{
+  background:linear-gradient(
+    135deg,
+    #f472b6,
+    #c084fc,
+    transparent
+  );
+}
+
+.tools-card:hover{
+  transform:translateY(-10px);
+
+  border-color:#c084fc;
+
+  box-shadow:
+    0 0 35px rgba(232,121,249,0.35);
+}
+
+/* GRID */
+
+.skills-grid{
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:25px;
+}
+
+/* ICON BOX */
+
+.skills-grid a{
+  width:75px;
+  height:75px;
+
+  margin:auto;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:20px;
+
+  background:rgba(30,41,59,0.8);
+
+  font-size:2.3rem;
+
+  transition:0.35s ease;
+}
+
+/* WEB ICONS */
+
+.web-card .skills-grid a{
+  color:#38bdf8;
+
+  border:1px solid rgba(56,189,248,0.15);
+}
+
+.web-card .skills-grid a:hover{
+  transform:translateY(-8px) scale(1.08);
+
+  background:#38bdf8;
+
+  color:#020617;
+
+  border-color:#38bdf8;
+
+  box-shadow:
+    0 0 25px rgba(56,189,248,0.45);
+}
+
+/* TECH ICONS */
+
+.tech-card .skills-grid a{
+  color:#4ade80;
+
+  border:1px solid rgba(74,222,128,0.15);
+}
+
+.tech-card .skills-grid a:hover{
+  transform:translateY(-8px) scale(1.08);
+
+  background:#4ade80;
+
+  color:#020617;
+
+  border-color:#4ade80;
+
+  box-shadow:
+    0 0 25px rgba(74,222,128,0.45);
+}
+
+/* TOOLS ICONS */
+
+.tools-card .skills-grid a{
+  color:#e879f9;
+
+  border:1px solid rgba(232,121,249,0.18);
+}
+
+.tools-card .skills-grid a:hover{
+  transform:translateY(-8px) scale(1.08);
+
+  background:linear-gradient(
+    135deg,
+    #f472b6,
+    #c084fc
+  );
+
+  color:#fff;
+
+  border-color:#c084fc;
+
+  box-shadow:
+    0 0 25px rgba(232,121,249,0.45);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  .skills-heading h2{
+    font-size:2.4rem;
+  }
+
+  .skills-container{
+    width:92%;
+  }
+
+  .skills-grid{
+    gap:18px;
+  }
+
+  .skills-grid a{
+    width:65px;
+    height:65px;
+    font-size:2rem;
+  }
+}
