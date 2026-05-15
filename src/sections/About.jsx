@@ -136,12 +136,16 @@ function About() {
   >
 
     {[
-      "/navdhara (1).jpeg",
+      "/hackathon (5).jpeg",
+      "/hackathon (4).jpeg",
       "/navdhara (2).jpeg",
+      "/navdhara (1).jpeg",
       "/navdhara (3).jpeg",
       "/navdhara (4).jpeg",
       "/navdhara (5).jpeg",
-      "/navdhara (6).jpeg",
+      "/hackathon (1).jpeg",
+      "/hackathon (2).jpeg",
+      "/hackathon (3).jpeg",
     ].map((img, index) => (
 
       <SwiperSlide key={index}>
