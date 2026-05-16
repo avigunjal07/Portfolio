@@ -26,10 +26,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_dcoej3c",
-        "template_ng7u4zq",
+        "service_kqfhbsm",
+        "template_w6hjtlq",
         form.current,
-        "HTllyl_D97huny007"
+        "EsU2v0cQNyQciy2WL"
       )
       .then(
         () => {
@@ -100,7 +100,7 @@ function Contact() {
           >
 
             <h3>
-              Let's Connect 🚀
+              Let's Connect 
             </h3>
 
             <p>
@@ -180,14 +180,14 @@ function Contact() {
 
             <input
               type="text"
-              name="user_name"
+              name="from_name"
               placeholder="Your Name"
               required
             />
 
             <input
               type="email"
-              name="user_email"
+              name="from_email"
               placeholder="Your Email"
               required
             />
