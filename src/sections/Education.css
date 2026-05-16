@@ -7,6 +7,10 @@
   color: white;
 }
 
+/* ================================================= */
+/* BACKGROUND */
+/* ================================================= */
+
 .education-bg {
   position: absolute;
   inset: 0;
@@ -25,11 +29,16 @@
   z-index: 10;
 }
 
+/* ================================================= */
+/* HEADING */
+/* ================================================= */
+
 .education-heading {
   text-align: center;
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 70px;
+  line-height: 1.2;
 }
 
 .education-heading span {
@@ -39,23 +48,39 @@
 }
 
 /* ================================================= */
+/* COMMON SECTION */
+/* ================================================= */
+
+.education-wrapper,
+.achievements-card,
+.certificate-section,
+.leetcode-section {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid #1e293b;
+  border-radius: 28px;
+  padding: 40px;
+  margin-bottom: 40px;
+  backdrop-filter: blur(10px);
+}
+
+/* ================================================= */
 /* SECTION TITLE */
 /* ================================================= */
 
 .section-title {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   margin-bottom: 35px;
 }
 
 .section-title svg {
   color: #22d3ee;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .section-title h3 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -64,100 +89,88 @@
 /* EDUCATION */
 /* ================================================= */
 
-.edu-card,
-.achievements-card,
-.certificate-section,
-.leetcode-section {
-  background: rgba(15, 23, 42, 0.6);
-  border: 1px solid #1e293b;
-  border-radius: 25px;
-  padding: 40px;
-  margin-bottom: 40px;
-  backdrop-filter: blur(10px);
+.education-card {
+  background: #0f172a;
+  border-left: 6px solid #4ade80;
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 25px;
+  transition: 0.4s ease;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 
-.timeline {
-  border-left: 2px solid #1e293b;
-  padding-left: 30px;
+.education-card:last-child {
+  margin-bottom: 0;
 }
 
-.timeline-item {
-  position: relative;
-  margin-bottom: 40px;
+.education-card:hover {
+  border-color: #4ade80;
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(74, 222, 128, 0.18);
 }
 
-.timeline-dot {
-  position: absolute;
-  left: -39px;
-  top: 5px;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-}
-
-.cyan {
-  background: #22d3ee;
-}
-
-.green {
-  background: #22c55e;
-}
-
-.yellow {
-  background: #facc15;
-}
-
-.timeline-content h4 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.timeline-content p {
-  color: #94a3b8;
-  margin-bottom: 15px;
-}
-
-.timeline-top {
+.education-top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 20px;
+  margin-bottom: 12px;
   flex-wrap: wrap;
 }
 
-.timeline-top span {
-  color: #64748b;
+.education-top h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
 }
+
+.education-top span {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.education-card p {
+  color: #94a3b8;
+  margin-bottom: 18px;
+  font-size: 0.95rem;
+}
+
+/* ================================================= */
+/* BADGES */
+/* ================================================= */
 
 .badge-group {
   display: flex;
-  gap: 12px;
   flex-wrap: wrap;
+  gap: 12px;
 }
 
 .badge {
-  padding: 8px 16px;
+  padding: 8px 18px;
   border-radius: 50px;
   font-size: 0.85rem;
   font-weight: 600;
 }
 
 .cyan-badge {
-  background: rgba(34, 211, 238, 0.1);
+  background: rgba(34, 211, 238, 0.12);
   color: #22d3ee;
 }
 
 .purple-badge {
-  background: rgba(168, 85, 247, 0.1);
+  background: rgba(168, 85, 247, 0.12);
   color: #a855f7;
 }
 
 .green-badge {
-  background: rgba(34, 197, 94, 0.1);
+  background: rgba(34, 197, 94, 0.12);
   color: #22c55e;
 }
 
 .yellow-badge {
-  background: rgba(250, 204, 21, 0.1);
+  background: rgba(250, 204, 21, 0.12);
   color: #facc15;
 }
 
@@ -165,23 +178,21 @@
 /* ACHIEVEMENTS */
 /* ================================================= */
 
-.achievement-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+.achievement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-left: 24px;
 }
 
-.achievement-box {
-  background: #0f172a;
-  border: 1px solid #1e293b;
-  padding: 22px;
-  border-radius: 18px;
-  transition: 0.4s;
+.achievement-list li {
+  color: #e2e8f0;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
-.achievement-box:hover {
-  transform: translateY(-6px);
-  border-color: #22d3ee;
+.achievement-list li::marker {
+  color: #22d3ee;
 }
 
 /* ================================================= */
@@ -200,6 +211,13 @@
   border-radius: 22px;
   cursor: pointer;
   border: 1px solid #1e293b;
+  transition: 0.4s ease;
+  background: #0f172a;
+}
+
+.certificate-card:hover {
+  border-color: #22d3ee;
+  box-shadow: 0 0 18px rgba(34, 211, 238, 0.15);
 }
 
 .certificate-card img {
@@ -217,6 +235,7 @@
   padding: 18px;
   font-size: 1rem;
   background: #0f172a;
+  color: white;
 }
 
 .certificate-overlay {
@@ -239,6 +258,9 @@
   padding: 12px 20px;
   border-radius: 50px;
   backdrop-filter: blur(8px);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 /* ================================================= */
@@ -263,15 +285,19 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  pointer-events: none;
 }
 
 .total-solved h2 {
   font-size: 3rem;
   color: #f87171;
+  font-weight: 800;
 }
 
 .total-solved span {
   color: #94a3b8;
+  font-size: 0.9rem;
+  margin-top: 4px;
 }
 
 .leetcode-stats {
@@ -290,6 +316,12 @@
 .stat-box p {
   color: #94a3b8;
   margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.stat-box h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
 .progress-item {
@@ -301,6 +333,7 @@
 .progress-top {
   display: flex;
   justify-content: space-between;
+  font-size: 0.95rem;
 }
 
 .progress-bar {
@@ -353,7 +386,7 @@
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.82);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -379,17 +412,18 @@
 
   .leetcode-grid {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   .education-heading {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
   }
 
-  .edu-card,
+  .education-wrapper,
   .achievements-card,
   .certificate-section,
   .leetcode-section {
-    padding: 25px;
+    padding: 28px;
   }
 }
 
@@ -399,12 +433,32 @@
     font-size: 2rem;
   }
 
-  .timeline-top {
+  .section-title h3 {
+    font-size: 1.4rem;
+  }
+
+  .education-top {
     flex-direction: column;
+    align-items: flex-start;
     gap: 8px;
   }
 
   .certificate-grid {
     grid-template-columns: 1fr;
+  }
+
+  .education-wrapper,
+  .achievements-card,
+  .certificate-section,
+  .leetcode-section {
+    padding: 22px;
+  }
+
+  .education-card {
+    padding: 22px;
+  }
+
+  .total-solved h2 {
+    font-size: 2.4rem;
   }
 }

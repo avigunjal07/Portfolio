@@ -35,32 +35,42 @@ function Education() {
   }, []);
 
   const certificates = [
-    {
-      id: "mern",
-      title: "MERN Stack Development",
-      image: "/mern.png",
-    },
-    {
-      id: "talent",
-      title: "Talent Battle Java + DSA",
-      image: "/talent.png",
-    },
-    {
-      id: "synapse",
-      title: "Synapse Hackathon",
-      image: "/shackathon.png",
-    },
-    {
-      id: "topper",
-      title: "Academic 3rd Topper",
-      image: "/colorprint-2025.png",
-    },
-    {
-      id: "vyoma",
-      title: "VYOMA Prototype Competition",
-      image: "/vyoma.png",
-    },
-  ];
+        {
+          id: "mern",
+          title: "MERN Stack Development",
+          image: "/mern.png",
+        },
+
+        {
+          id: "talent",
+          title: "Talent Battle Java + DSA",
+          image: "/talent.png",
+        },
+
+        {
+          id: "hackarena",
+          title: "HackArena 2026",
+          image: "/hackarena.jpeg",
+        },
+
+        {
+          id: "vyoma",
+          title: "VYOMA Prototype Competition",
+          image: "/vyoma.png",
+        },
+
+        {
+          id: "synapse",
+          title: "Synapse Hackathon",
+          image: "/synapse.png",
+        },
+
+        {
+          id: "pandora",
+          title: "Pandora Hackathon",
+          image: "/pandora.png",
+        },
+        ];
 
   return (
     <section id="education" className="education-section">
@@ -90,79 +100,63 @@ function Education() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="edu-card"
+          className="education-wrapper"
         >
           <div className="section-title">
             <FaGraduationCap />
             <h3>Education</h3>
           </div>
 
-          <div className="timeline">
-
-            {/* BE */}
-            <div className="timeline-item">
-              <div className="timeline-dot cyan"></div>
-
-              <div className="timeline-content">
-                <div className="timeline-top">
-                  <h4>B.E Computer Engineering</h4>
-                  <span>2023 - Present</span>
-                </div>
-
-                <p>Savitribai Phule Pune University</p>
-
-                <div className="badge-group">
-                  <span className="badge cyan-badge">
-                    9.32 CGPA
-                  </span>
-
-                  <span className="badge purple-badge">
-                    Academic Top Tier
-                  </span>
-                </div>
-              </div>
+          {/* ===== CARD 1 ===== */}
+          <div className="education-card">
+            <div className="education-top">
+              <h4>B.E Computer Engineering</h4>
+              <span>2023 - Present</span>
             </div>
 
-            {/* 12TH */}
-            <div className="timeline-item">
-              <div className="timeline-dot green"></div>
+            <p>Savitribai Phule Pune University</p>
 
-              <div className="timeline-content">
-                <div className="timeline-top">
-                  <h4>Higher Secondary (12th)</h4>
-                  <span>2023</span>
-                </div>
+            <div className="badge-group">
+              <span className="badge cyan-badge">
+                9.44 CGPA
+              </span>
 
-                <p>YC College, Karad</p>
+              <span className="badge purple-badge">
+                Academic Top 5th Sem
+              </span>
+            </div>
+          </div>
 
-                <div className="badge-group">
-                  <span className="badge green-badge">
-                    76.60%
-                  </span>
-                </div>
-              </div>
+          {/* ===== CARD 2 ===== */}
+          <div className="education-card">
+            <div className="education-top">
+              <h4>Higher Secondary (12th)</h4>
+              <span>2023</span>
             </div>
 
-            {/* 10TH */}
-            <div className="timeline-item">
-              <div className="timeline-dot yellow"></div>
+            <p>BJS Junior College, Wagholi, Pune</p>
 
-              <div className="timeline-content">
-                <div className="timeline-top">
-                  <h4>Secondary (10th)</h4>
-                  <span>2021</span>
-                </div>
+            <div className="badge-group">
+              <span className="badge green-badge">
+                64.83%
+              </span>
+            </div>
+          </div>
 
-                <p>SVN Nimsod</p>
-
-                <div className="badge-group">
-                  <span className="badge yellow-badge">
-                    88.60%
-                  </span>
-                </div>
-              </div>
+          {/* ===== CARD 3 ===== */}
+          <div className="education-card">
+            <div className="education-top">
+              <h4>Secondary (10th)</h4>
+              <span>2021</span>
             </div>
 
+            <p>BJS Highshcool Wagholi, Pune</p>
+
+            <div className="badge-group">
+              <span className="badge yellow-badge">
+                86.00%
+              </span>
+            </div>
           </div>
         </motion.div>
 
@@ -181,35 +175,22 @@ function Education() {
             <h3>Achievements</h3>
           </div>
 
-          <div className="achievement-grid">
+          <ul className="achievement-list">
 
-            <div className="achievement-box">
-              🎓 Qualified GATE 2026
-            </div>
+            {/* <li>🎓 Qualified GATE 2026 with strong CS fundamentals</li> */}
 
-            <div className="achievement-box">
-              🏆 Academic 3rd Topper
-            </div>
+            <li>🏆 Academic 2nd Topper - TE </li>
 
-            <div className="achievement-box">
-              🚀 VYOMA Prototype Competition
-            </div>
+            <li>🚀 4th Rank in the HackArena 2026, Hackathon conducted by VIIT college Pune</li>
 
-            <div className="achievement-box">
-              💡 Smart India Hackathon Waitlist Rank 6
-            </div>
+            <li>💡 5+ Hackathon participation</li>
 
-            <div className="achievement-box">
-              📊 Solved 100+ DSA Problems
-            </div>
+            <li>📊 Solved 25+ DSA Problems on LeetCode</li>
 
-            <div className="achievement-box">
-              ⚡ Built MERN + ML Projects
-            </div>
+            {/* <li>⚡ Built multiple MERN + ML Projects</li> */}
 
-          </div>
+          </ul>
         </motion.div>
-
         {/* ====================================================== */}
         {/* ================= CERTIFICATES ======================= */}
         {/* ====================================================== */}
