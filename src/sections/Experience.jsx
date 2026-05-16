@@ -82,7 +82,7 @@ function Experience() {
           Work <span>Experience</span>
         </motion.h2>
 
-        {/* ================= EXPERIENCE CARD ================= */}
+        {/* =============== EXPERIENCE CARD =============== */}
 
         <div className="experience-wrapper">
 
