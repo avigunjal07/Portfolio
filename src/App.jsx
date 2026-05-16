@@ -4,6 +4,7 @@ import About from "./sections/About.jsx"
 import Skills from "./sections/Skills.jsx"
 import Education from "./sections/Education.jsx";
 import Experience from "./sections/Experience.jsx";
+import Projects from "./sections/Projects.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Skills />
       <Education />
       <Experience />
+      <Projects />
     </BrowserRouter>
   );
 }
