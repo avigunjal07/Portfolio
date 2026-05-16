@@ -263,7 +263,7 @@ body{
   line-height:1.15;
   margin-bottom:18px;
   font-weight:700;
-  width: 425px;
+  /* width: 425px; */
 
   white-space: nowrap;
 }
