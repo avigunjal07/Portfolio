@@ -38,7 +38,7 @@ function Education() {
         {
           id: "mern",
           title: "MERN Stack Development",
-          image: "/mern.png",
+          image: "/MERN.png",
         },
 
         {
