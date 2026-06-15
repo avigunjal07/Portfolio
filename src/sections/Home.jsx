@@ -204,7 +204,7 @@ function Home() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="/Resume Avishkar S Gunjal.pdf"
+              href="/Avishkar_Gunjal_BE_2027.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="resume-btn"
