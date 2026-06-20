@@ -250,8 +250,8 @@ function Home() {
 
             {/* Profile Image */}
             <motion.img
-              src="/Profile Image.jpeg"
-              alt="profile"
+              src="/Avishkar Gunjal.jpeg"
+              alt="Avishkar Gunjal"
               className="profile-image"
               
               transition={{
